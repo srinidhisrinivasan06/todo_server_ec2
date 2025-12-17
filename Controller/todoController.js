@@ -34,7 +34,7 @@ export const deleteTodo=async(req,res)=>{
     await todoCollection.findByIdAndDelete(req.params.id)
     res.json({message:"todo has been deleted"})
     }
-    catch{
+    catch(err){
         res.status(500).json({message:err})
     }
 }

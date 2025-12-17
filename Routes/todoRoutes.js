@@ -8,7 +8,7 @@ const route=express.Router()
 
 route.post('/addtodo',addTodo);
 route.get('/gettodo',getTodo);
-route.put('/updatetodo',UpdateTodo);
-route.delete('/deletetodo',deleteTodo);
+route.put('/updatetodo/:id',UpdateTodo);
+route.delete('/deletetodo/:id',deleteTodo);
 
 export default route

@@ -2,7 +2,7 @@
 import mongoose from "mongoose";
 const todoSchema=mongoose.Schema({
     todo:{
-        type:String,require:true,unique:true}
+        type:String,require: true,unique: true}
     }
 )
 //we r creating collections with name called todos with todoSchema
